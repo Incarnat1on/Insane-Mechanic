@@ -1,0 +1,19 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj" RefactoringSettings.EnableRefactorings="True">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PushTheButtoN.cs">
+    <Files>
+      <File FileName="Assets\Scripts\LevelController.cs" Line="48" Column="43" />
+      <File FileName="Assets\Scripts\PushTheButtoN.cs" Line="57" Column="15" />
+      <File FileName="Assets\InventoryContainer.cs" Line="33" Column="50" />
+      <File FileName="Assets\ItemLogic.cs" Line="19" Column="30" />
+      <File FileName="Assets\Scripts\LevelInfo.cs" Line="8" Column="13" />
+      <File FileName="Assets\Scripts\LevelData.cs" Line="13" Column="20" />
+      <File FileName="Assets\Scripts\ItemLevel.cs" Line="7" Column="1" />
+      <File FileName="Assets\LogicTrigger.cs" Line="12" Column="103" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

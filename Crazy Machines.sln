@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{1C7B8AD0-BEBA-266C-8B91-62C0F6569198}") = "Crazy Machines", "Assembly-CSharp.csproj", "{E9D62645-BE7D-C52F-B0C0-F529BE8B8F34}"
+EndProject
+Project("{1C7B8AD0-BEBA-266C-8B91-62C0F6569198}") = "Crazy Machines", "Assembly-CSharp-Editor.csproj", "{0353710D-C357-8393-7A89-D9FAF407AC45}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9D62645-BE7D-C52F-B0C0-F529BE8B8F34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9D62645-BE7D-C52F-B0C0-F529BE8B8F34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9D62645-BE7D-C52F-B0C0-F529BE8B8F34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9D62645-BE7D-C52F-B0C0-F529BE8B8F34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0353710D-C357-8393-7A89-D9FAF407AC45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0353710D-C357-8393-7A89-D9FAF407AC45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0353710D-C357-8393-7A89-D9FAF407AC45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0353710D-C357-8393-7A89-D9FAF407AC45}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

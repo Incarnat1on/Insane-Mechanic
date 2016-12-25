@@ -1,0 +1,15 @@
+.settings/settings.json
+.vscode/
+*.booproj
+*.csproj
+*.sln
+*.suo
+*.unityproj
+*.userprefs
+Assets/UnityVS/Editor/UnityVS.VersionSpecific.dll
+Assets/UnityVS/Editor/UnityVS.VersionSpecific.dll.meta
+Library/
+obj/
+Temp/
+VSCode.meta
+VSCode/
