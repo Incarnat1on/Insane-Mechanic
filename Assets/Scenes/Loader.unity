@@ -134,6 +134,21 @@ Prefab:
       propertyPath: m_Name
       value: InterfaceMain
       objectReference: {fileID: 0}
+    - target: {fileID: 114241137106302248, guid: 93b27899e45a429498fe8ffaec19054d,
+        type: 2}
+      propertyPath: aspectRatio
+      value: 8.406977
+      objectReference: {fileID: 0}
+    - target: {fileID: 114926802875403480, guid: 93b27899e45a429498fe8ffaec19054d,
+        type: 2}
+      propertyPath: aspectRatio
+      value: 1.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 114383132531426366, guid: 93b27899e45a429498fe8ffaec19054d,
+        type: 2}
+      propertyPath: mAlpha
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 93b27899e45a429498fe8ffaec19054d, type: 2}
   m_IsPrefabParent: 0

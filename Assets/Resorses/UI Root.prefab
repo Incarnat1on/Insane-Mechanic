@@ -1132,7 +1132,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 843, y: 450, z: 0}
+  m_Size: {x: 837, y: 450, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65835334228824628
 BoxCollider:
@@ -1598,7 +1598,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 729
+  mWidth: 723
   mHeight: 86
   mDepth: 1000
   autoResizeBoxCollider: 0
@@ -2892,12 +2892,12 @@ MonoBehaviour:
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 3
-  mClipRange: {x: 0, y: 0, z: 160.4, w: 305.1}
+  mClipRange: {x: 0, y: 0, z: 160.4, w: 302.1}
   mClipSoftness: {x: 4, y: 4}
   mDepth: 1
   mSortingOrder: 0
   mSortingLayerName: 
-  mClipOffset: {x: 0, y: -93.5}
+  mClipOffset: {x: 0, y: -96.24}
 --- !u!114 &114728629855436958
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3017,7 +3017,7 @@ MonoBehaviour:
   renderQueue: 0
   startingRenderQueue: 3007
   mClipTexture: {fileID: 0}
-  mAlpha: 1
+  mAlpha: 0
   mClipping: 0
   mClipRange: {x: 0, y: 0, z: 300, w: 200}
   mClipSoftness: {x: 4, y: 4}
@@ -3236,7 +3236,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 843
+  mWidth: 837
   mHeight: 450
   mDepth: 999
   autoResizeBoxCollider: 1
