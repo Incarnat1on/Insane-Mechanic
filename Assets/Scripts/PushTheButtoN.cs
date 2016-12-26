@@ -14,10 +14,17 @@ public class PushTheButtoN : Singleton <PushTheButtoN>  {
 	[SerializeField]
 	InventoryContainer Inventory;
 
+	public ItemSettings itemSettings {
+		get { return _itemSettings; }
+	}
+
+	[SerializeField]
+	ItemSettings _itemSettings;
+
 	[SerializeField]
 	LevelInfo levelInfo;
 
-	[Header("<<<<<<<<<<<< Info Labels >>>>>>>>>>>>")]
+	[Header("         Info Labels          ")]
 	[SerializeField]
 	UILabel _timerLabel;
 	[SerializeField]
@@ -26,7 +33,7 @@ public class PushTheButtoN : Singleton <PushTheButtoN>  {
 	UILabel _allPoints;
 
 
-	[Header("<<<<<<<<<<<< End Game Widget >>>>>>>>>>>>")]
+	[Header("        End Game Widget         ")]
 	[SerializeField]
 	UIWidget endLevelWindow;
 	[SerializeField]

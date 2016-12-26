@@ -6,6 +6,7 @@ using System;
 [Serializable]
 public class ItemLevel
 {
+	public int id = 1;
 	[SerializeField]
 	public GameObject item;
 	[SerializeField]
