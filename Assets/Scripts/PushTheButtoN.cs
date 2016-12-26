@@ -14,10 +14,17 @@ public class PushTheButtoN : Singleton <PushTheButtoN>  {
 	[SerializeField]
 	InventoryContainer Inventory;
 
+	public ItemSettings itemSettings {
+		get { return _itemSettings; }
+	}
+
+	[SerializeField]
+	ItemSettings _itemSettings;
+
 	[SerializeField]
 	LevelInfo levelInfo;
 
-	[Header("<<<<<<<<<<<< Info Labels >>>>>>>>>>>>")]
+	[Header("         Info Labels          ")]
 	[SerializeField]
 	UILabel _timerLabel;
 	[SerializeField]
@@ -26,7 +33,7 @@ public class PushTheButtoN : Singleton <PushTheButtoN>  {
 	UILabel _allPoints;
 
 
-	[Header("<<<<<<<<<<<< End Game Widget >>>>>>>>>>>>")]
+	[Header("        End Game Widget         ")]
 	[SerializeField]
 	UIWidget endLevelWindow;
 	[SerializeField]
@@ -76,14 +83,6 @@ public class PushTheButtoN : Singleton <PushTheButtoN>  {
 		StartCoroutine (InitializeMain (1));
 	}
 
-	void Update()
-	{
-		if (Input.GetKeyDown (KeyCode.A)) {
-			LevelComplete ();
-		}
-
-	}
-
 	IEnumerator InitializeMain(int level){
 		loadingScreen.alpha = 1;
 		var p = Application.LoadLevelAsync (level);
@@ -115,8 +114,8 @@ public class PushTheButtoN : Singleton <PushTheButtoN>  {
 
 	public void LevelComplete ()
 	{
-		_playerData.AllPoints += (int)points;
-		
+		var x =_playerData.AllPoints += (int)points;
+		_allPoints.text = x.ToString ();
 		StopAllCoroutines ();
 		//open stat window
 		OpenEndWindow();
@@ -127,6 +126,7 @@ public class PushTheButtoN : Singleton <PushTheButtoN>  {
 
 	void OpenEndWindow ()
 	{
+		_playerData.AllPoints += (int)points;
 		__allpoints.text = _allPoints.text;
 		__time.text = _timerLabel.text;
 		__levelpoints.text =((int) points).ToString();
@@ -136,7 +136,6 @@ public class PushTheButtoN : Singleton <PushTheButtoN>  {
 	public void LoadNextLevel()
 	{
 		endLevelWindow.alpha = 0;
-
 		StartCoroutine (InitializeMain (Application.loadedLevel + 1));
 	}
 }

@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33068332188574310}
   - component: {fileID: 65004379866918052}
   - component: {fileID: 23057662996886184}
+  - component: {fileID: 114376072365596368}
   m_Layer: 0
   m_Name: Doska (1)
   m_TagString: Untagged
@@ -55,7 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: c9e177657cec497498968c11b1c4e3a3, type: 2}
+  - {fileID: 2100000, guid: e70cc3b932e88104386ae129b7c435c8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -92,3 +93,14 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114376072365596368
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1314031947131318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e62ce214f53689c4897afc42d2d9562a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

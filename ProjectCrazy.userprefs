@@ -1,0 +1,17 @@
+﻿<Properties RefactoringSettings.EnableRefactorings="True" StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ItemCall.cs">
+    <Files>
+      <File FileName="Assets\Scripts\LevelController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ItemLogic.cs" Line="56" Column="134" />
+      <File FileName="Assets\Scripts\ItemLevel.cs" Line="11" Column="24" />
+      <File FileName="Assets\ItemSettings.cs" Line="69" Column="3" />
+      <File FileName="Assets\Scripts\PushTheButtoN.cs" Line="36" Column="18" />
+      <File FileName="Assets\ItemCall.cs" Line="12" Column="71" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
