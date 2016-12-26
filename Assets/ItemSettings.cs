@@ -71,6 +71,7 @@ public class ItemSettings : MonoBehaviour {
 	IEnumerator ChangePosition ()
 	{
 		var t = _transform;
+		yield return new WaitForSeconds(0.1f);
 		while (moving) {
 			#if UNITY_EDITOR
 			if (Input.GetMouseButton (0)) {
@@ -91,14 +92,15 @@ public class ItemSettings : MonoBehaviour {
 	IEnumerator ChangeRotation ()
 	{
 		var t = _transform;
+		yield return new WaitForSeconds(0.1f);
 		while (rotating ) {
 			var euler = t.localEulerAngles;
 			#if UNITY_EDITOR
 			if (Input.GetMouseButton(0)){
-				euler += new Vector3(euler.x,euler.y,Input.GetAxis ("Mouse Y")*5);
+				euler += new Vector3(euler.x,euler.y,Input.GetAxis ("Mouse Y")*5 - Input.GetAxis ("Mouse X")*5);
 			}
 			#else
-			euler += new Vector3(euler.x,euler.y,Input.GetAxis ("Mouse Y")*5);
+			euler += new Vector3(euler.x,euler.y,Input.GetAxis ("Mouse Y")*5 - Input.GetAxis ("Mouse X")*5);
 			#endif
 			t.localEulerAngles = euler;
 			yield return new WaitForEndOfFrame ();

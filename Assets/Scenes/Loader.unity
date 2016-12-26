@@ -91,7 +91,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &604420634
+--- !u!1001 &1730441743
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -137,41 +137,17 @@ Prefab:
     - target: {fileID: 114241137106302248, guid: 93b27899e45a429498fe8ffaec19054d,
         type: 2}
       propertyPath: aspectRatio
-      value: 5.6511626
+      value: 10.127907
       objectReference: {fileID: 0}
-    - target: {fileID: 4849208207411090, guid: 93b27899e45a429498fe8ffaec19054d, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.0044444446
-      objectReference: {fileID: 0}
-    - target: {fileID: 4849208207411090, guid: 93b27899e45a429498fe8ffaec19054d, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.0044444446
-      objectReference: {fileID: 0}
-    - target: {fileID: 4849208207411090, guid: 93b27899e45a429498fe8ffaec19054d, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.0044444446
-      objectReference: {fileID: 0}
-    - target: {fileID: 65641727579693660, guid: 93b27899e45a429498fe8ffaec19054d,
+    - target: {fileID: 114926802875403480, guid: 93b27899e45a429498fe8ffaec19054d,
         type: 2}
-      propertyPath: m_Size.x
-      value: 838
+      propertyPath: aspectRatio
+      value: 2.1888888
       objectReference: {fileID: 0}
-    - target: {fileID: 114241137106302248, guid: 93b27899e45a429498fe8ffaec19054d,
+    - target: {fileID: 114412457449723100, guid: 93b27899e45a429498fe8ffaec19054d,
         type: 2}
-      propertyPath: mWidth
-      value: 724
-      objectReference: {fileID: 0}
-    - target: {fileID: 4967524287248226, guid: 93b27899e45a429498fe8ffaec19054d, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -72.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4552509525956516, guid: 93b27899e45a429498fe8ffaec19054d, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -72.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4552509525956516, guid: 93b27899e45a429498fe8ffaec19054d, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 64.3
+      propertyPath: mColor.a
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 93b27899e45a429498fe8ffaec19054d, type: 2}
