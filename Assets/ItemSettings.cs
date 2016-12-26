@@ -6,12 +6,34 @@ public class ItemSettings : MonoBehaviour {
 
 	[SerializeField]
 	UIWidget widget;
+	[SerializeField]
+	UI2DSprite OnState;
 	Transform _transform;
+	[SerializeField]
+	Sprite ForTransform;
+	[SerializeField]
+	Sprite ForRotation;
+	[SerializeField]
+	Sprite ForConnect;
+
 
 	bool moving;
 	bool rotating;
 	ItemCall itemCalled;
 	int countClicks;
+
+	void Awake ()
+	{
+		widget.alpha = 0;
+	}
+
+	public void StartEvent (bool rotate = true)
+	{
+		if (rotate)
+			StartRotate ();
+		else
+			Connect ();
+	}
 
 	public void SetItem (Transform transform, ItemCall _itemCalled)
 	{
@@ -28,6 +50,8 @@ public class ItemSettings : MonoBehaviour {
 		if (!rotating) {
 			rotating = true;
 			moving = false;
+			OnState.sprite2D = ForRotation;
+			OnState.alpha = 0.5f;
 			StartCoroutine (ChangeRotation ());
 		}
 		else 
@@ -42,6 +66,8 @@ public class ItemSettings : MonoBehaviour {
 		if (!moving) {
 			moving = true;
 			rotating = false;
+			OnState.sprite2D = ForTransform;
+			OnState.alpha = 0.5f;
 			StartCoroutine (ChangePosition ());
 		}
 		else 
@@ -49,6 +75,12 @@ public class ItemSettings : MonoBehaviour {
 			moving = false;
 			rotating = false;
 		}
+	}
+
+	public void Connect ()
+	{
+		OnState.sprite2D = ForConnect;
+		OnState.alpha = 0.5f;
 	}
 
 	public void End()
@@ -62,6 +94,7 @@ public class ItemSettings : MonoBehaviour {
 
 	void OpenMenuItem ()
 	{
+		OnState.alpha = 0;
 		widget.alpha = 1;
 		var temp = UICamera.mainCamera.ScreenToWorldPoint (Camera.main.WorldToScreenPoint (_transform.position));
 		this.transform.position = temp;
@@ -71,6 +104,7 @@ public class ItemSettings : MonoBehaviour {
 	IEnumerator ChangePosition ()
 	{
 		var t = _transform;
+		OnState.transform.localEulerAngles = Vector3.zero;
 		yield return new WaitForSeconds(0.1f);
 		while (moving) {
 			#if UNITY_EDITOR
@@ -92,6 +126,7 @@ public class ItemSettings : MonoBehaviour {
 	IEnumerator ChangeRotation ()
 	{
 		var t = _transform;
+		var anim = OnState.transform;
 		yield return new WaitForSeconds(0.1f);
 		while (rotating ) {
 			var euler = t.localEulerAngles;
@@ -103,6 +138,7 @@ public class ItemSettings : MonoBehaviour {
 			euler += new Vector3(euler.x,euler.y,Input.GetAxis ("Mouse Y")*5 - Input.GetAxis ("Mouse X")*5);
 			#endif
 			t.localEulerAngles = euler;
+			anim.localEulerAngles += new Vector3(0,0,25*Time.deltaTime);
 			yield return new WaitForEndOfFrame ();
 		}
 	}

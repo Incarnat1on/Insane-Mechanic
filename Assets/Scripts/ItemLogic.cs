@@ -54,6 +54,7 @@ public class ItemLogic : MonoBehaviour
 		else 
 		{
 			PushTheButtoN.Instance.itemSettings.SetItem(GameObj.FirstOrDefault ().transform,GameObj.FirstOrDefault ().GetComponent<ItemCall>());
+			PushTheButtoN.Instance.itemSettings.StartEvent ();
 			GameObj.Remove (GameObj.FirstOrDefault ());
 		}
 	}
