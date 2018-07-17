@@ -53,6 +53,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4095718966601056}
+  - component: {fileID: 114909471900096880}
   m_Layer: 0
   m_Name: SpringArrows
   m_TagString: Untagged
@@ -67,7 +68,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1567595050112694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.5}
+  m_LocalPosition: {x: -17.76, y: -8.1, z: 13.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4872605861903572}
@@ -137,6 +138,27 @@ MonoBehaviour:
   updateScrollView: 0
   eventReceiver: {fileID: 0}
   callWhenFinished: 
+--- !u!114 &114909471900096880
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1567595050112694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee13e75f860fe484fb71fcc5a5fac841, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  springs:
+  - {fileID: 114757477349871346}
+  - {fileID: 114015591600662786}
+  springsStart:
+  - {x: 8, y: 8.64, z: 0}
+  - {x: 12.6, y: 8.64, z: 0}
+  springsEnd:
+  - {x: 7, y: 8.64, z: 0}
+  - {x: 13.6, y: 8.64, z: 0}
+  timer: 0.7
 --- !u!212 &212685241737269218
 SpriteRenderer:
   m_ObjectHideFlags: 1

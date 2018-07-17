@@ -1587,11 +1587,11 @@ SpringJoint:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 850840553}
   m_ConnectedBody: {fileID: 721268996}
-  m_Anchor: {x: 0, y: 1, z: 0}
+  m_Anchor: {x: 0, y: 2, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 9.445187, z: 0}
   serializedVersion: 2
-  m_Spring: 5
+  m_Spring: 500
   m_Damper: 0
   m_MinDistance: 0
   m_MaxDistance: 1
